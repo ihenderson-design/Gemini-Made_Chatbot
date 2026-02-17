@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="setup-modal" class="modal">
+        <div class="modal-content">
+            <h2>🚀 Setup your Chatbot</h2>
+            <p>To use this bot, you need a free Google Gemini API Key.</p>
+            <input type="password" id="api-key-input" placeholder="Paste your Gemini API Key here">
+            <button id="save-key-btn">Start Chatting</button>
+            <p class="tiny-text">Your key is saved locally in your browser. <a href="https://aistudio.google.com/app/apikey" target="_blank">Get a key here.</a></p>
+        </div>
+    </div>
+
+    <div class="app-container">
+        <header>
+            <div class="logo">✨ Gemini <span>Bot</span></div>
+            <button id="clear-btn" title="Reset Chat">Reset</button>
+        </header>
+
+        <div class="chat-container" id="chat-container">
+            <div class=" message bot-message">
+                Hello! I am connected to Gemini. How can I help you today?
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-wrapper">
+                <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+                <button id="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
